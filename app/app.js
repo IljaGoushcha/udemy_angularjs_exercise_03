@@ -1,7 +1,3 @@
-// note this really should not include any modules, just controller, but
-// I do not know the proper way of implementing that, or what the
-// pest practices are for this kind of a job
-
 angular.module('App', []);
 
 angular.module('App').controller('CustomersCtrl', function($scope) {
