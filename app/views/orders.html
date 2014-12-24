@@ -1,5 +1,5 @@
 <div class="container">
-    <h2>Orders</h2>
+    <h2>{{customer.firstName}}'s Orders</h2>
 </div>
 
 <div class="container">
@@ -8,7 +8,7 @@
             <th>Product</th>
             <th>Total</th>
         </tr>
-        <tr ng-repeat="order in orders">
+        <tr ng-repeat="order in customer.orders">
             <td>{{order.product}}</td>
             <td>{{order.total | currency}}</td>
         </tr>
