@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Orders</h2>
+</div>
+
+<div class="container">
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th>Product</th>
+            <th>Total</th>
+        </tr>
+        <tr ng-repeat="order in orders">
+            <td>{{order.product}}</td>
+            <td>{{order.total | currency}}</td>
+        </tr>
+    </table>
+</div>
